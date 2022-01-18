@@ -4,16 +4,37 @@
   margin: 80px 50px;
 }
 
-#app2 > input {
+#app2 input {
   padding: 8px 12px;
   border-radius: 12px;
+  width: 100%;
+}
+
+#input {
+  display: flex;
+  flex-direction: row;
+}
+
+#app2 button{
+  padding : 8px 6px;
+  border-radius: 4px;
+  margin-left: 24px;
+
+  word-wrap: normal;
+  word-break: keep-all;
+}
+
+#input-wrap {
+  display: flex;
+
 }
 
 #app2 > div {
   margin-top: 24px;
-  background-color: rgb(44, 35, 48);
+  background-color: rgb(184, 184, 184);
   text-align: center;
   font-size: 24px;
   color: white;
   padding:18px 12px;
+  border-radius: 12px;
 }
