@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
-import './App.css'
 
 class App extends Component {
   constructor(props) {
     super(props)
+    this.state = { counter: 0 }
+  }
+  shouldComponentUpdate(props, state) {
+    return true
   }
 
   render() {
-    return <div id="main">Hello World</div>
+    return <div>{this.props.counter}</div>
   }
 }
-
 export default App
