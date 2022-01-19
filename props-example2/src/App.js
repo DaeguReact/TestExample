@@ -10,13 +10,13 @@ function App() {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    flexDirection: 'column',
-    margin: '20px auto'
+    flexDirection: 'column'
+    , margin: '20px auto'
   }
 
   return (
     <div id='root'>
-      <AnimalImage style={rootStyle}/>
+      Hello World
     </div>
   );
 }
