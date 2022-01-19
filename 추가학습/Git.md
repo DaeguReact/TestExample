@@ -18,13 +18,13 @@ Git은 리눅스 개발자인 [리누스 토르발스](https://namu.wiki/w/%EB%A
 
 > `git add .` 현재 경로에 있는 모든 변경사항을 Git에게 알려줌<br>
 > `git commit -m <message>` 변경 사항에 대해서 확정하고 메시지를 같이 남김<br>
-> `git push <branch> <remote branch>`로컬의 브랜치 상태를 remote branch로 업로드
+> `git push <remote branch> <branch>`로컬의 브랜치 상태를 remote branch로 업로드
 
 그리고 같은 원격 레포지토리를 가지고 있다면 최신의 정보를 가지고 오는 `git fetch` 그리고 fetch된 정보를 병합까지 해주는 `git pull`가 있다.
 
 > `git fetch`를 사용한 경우 `git merge`를 이용해 병합을 따로 해주어야 한다.
 
-4. Git branch 관련
+1. Git branch 관련
 
 Git은 형상관리를 위해 다양한 기능을 제공하고 있다. 그 중 branch에 대해서 알아보자.
 branch는 가지 라는 뜻으로 하나의 분기점을 말한다.

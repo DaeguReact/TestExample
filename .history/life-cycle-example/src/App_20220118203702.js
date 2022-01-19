@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
-import './App.css'
 
 class App extends Component {
-  constructor(props) {
-    super(props)
+  getSnapshotBeforeUpdate(props, state) {
+    return false
   }
 
   render() {
-    return <div id="main">Hello World</div>
+    return <div></div>
   }
 }
-
 export default App

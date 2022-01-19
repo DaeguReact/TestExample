@@ -1,15 +1,13 @@
 #main {
-  margin-top: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 400px;
-  font-size: 24px;
 }
 
 #main button {
   background-color: black;
   color: white;
-  padding: 12px 24px;
+  padding: 24px 36px;
 }
