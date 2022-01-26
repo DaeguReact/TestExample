@@ -5,15 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #progress-wrap {
+            width: 650px;
+            height: 50px;
+            background-color: black;
+            margin-top: 30px;
+        }
+
+        #progress {
+            transition: all 0.3s;
+            background-color: aquamarine;
+            height: 100%;
+            max-width: 650px;
+        }
+    </style>
 </head>
 <body>
-    
+    <button id="button">Click me</button>
+    <div id="progress-wrap">
+        <div id="progress"></div>
+    </div>
 </body>
     <script>
-let hello = "hello";
-const obj = {
-    hello
-};
-console.log(obj);
+        const btn = document.getElementById('button')
+        const progress = document.getElementById('progress')
+        progress.style.width = '0px'
+        btn.addEventListener('mouseover', () => {
+            let currentWidth = progress.style.width.replace('px', '')
+            progress.style.width = currentWidth * 1 + 10 + 'px'
+        })
     </script>
 </html>
