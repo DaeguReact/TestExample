@@ -9,6 +9,7 @@
 | 3    | 2022.01.19 | React props를 이용한 앱             | 김수진 | [링크](./props-example)      |        |
 | 4    | 2022.01.19 | React props를 이용한 앱2            | 하욱현 | [링크](./props-example2)     |        |
 | 5    | 2022.01.19 | React Hook을 이용한 앱              | 하욱현 | [링크](./hook-example2)      | 미완성 |
+| 6    | 2022.01.28 | React Hook에 대한 내용              | 하욱현 | [링크](./document/hook.md)      |  |
 
 ## 추가학습
 
