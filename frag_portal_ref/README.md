@@ -288,4 +288,4 @@ export default Button
 
 #### 예제화면
 
-![](./gifs/실습1.gif)
+![실습이미지](./gifs/실습1.gif)
