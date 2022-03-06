@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./modal.css" />
+    <title>Modal Example</title>
+    <style></style>
+  </head>
+  <body>
+    <div id="modal" class="close">
+      <div id="modal-background"></div>
+      <div id="modal-main">
+        <header class="error">
+          <h1>Title</h1>
+        </header>
+        <section>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            delectus deleniti ipsum saepe nulla, quae fugiat nihil expedita
+            similique, sed placeat a maxime quis hic voluptates, magnam ducimus
+            iusto dignissimos.
+          </p>
+        </section>
+      </div>
+    </div>
+    <header>
+      <h1>WebPage Demo</h1>
+      <span>(with Deagu React)</span>
+    </header>
+    <section>
+      <div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum a
+          totam nesciunt ratione non maiores molestiae in optio sit culpa
+          expedita provident, impedit, eos aut facere eaque corrupti rerum ut.
+        </p>
+      </div>
+      <div class="buttons">
+        <button id="error-btn">Button A</button>
+        <button id="success-btn">Button B</button>
+      </div>
+    </section>
+  </body>
+  <script>
+    // Elements
+    const errorBtn = document.getElementById('error-btn')
+    const successBtn = document.getElementById('success-btn')
+    const modalWrap = document.getElementById('modal')
+    const modalBackground = document.getElementById('modal-background')
+    const modalMainHeader = document.querySelector('#modal-main > header')
+
+    errorBtn.addEventListener('click', (e) => {
+      modalOpen()
+      modalMainHeader.classList.add('error')
+    })
+
+    successBtn.addEventListener('click', (e) => {
+      modalOpen()
+      modalMainHeader.classList.add('success')
+    })
+
+    modalBackground.addEventListener('click', (e) => {
+      modalClose()
+    })
+
+    const modalOpen = () => {
+      modalWrap.classList.remove('close')
+      modalWrap.classList.add('open')
+    }
+    const modalClose = () => {
+      modalWrap.classList.add('close')
+      modalWrap.classList.remove('open')
+
+      //remove modal main header classes
+      modalMainHeader.classList.remove('error')
+      modalMainHeader.classList.remove('success')
+    }
+  </script>
+</html>

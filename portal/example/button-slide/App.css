@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.error:hover {
+  border: 2px solid red;
+  color: red;
+}
+
+.error {
+  background-color: red;
+  color: white;
+  border: 2px solid red;
+}
+
+.info:hover {
+  border: 2px solid rgb(0, 132, 255);
+  color: rgb(0, 132, 255);
+}
+
+.info {
+  background-color: rgb(0, 132, 255);
+  color: white;
+  border: 2px solid rgb(0, 132, 255);
+}
+
+.success:hover {
+  border: 2px solid rgb(0, 182, 9);
+  color: rgb(0, 182, 9);
+}
+
+.success {
+  border: 2px solid rgb(0, 182, 9);
+  background-color: rgb(0, 182, 9);
+  color: white;
+}
+
+.wrap {
+  margin: 100px;
+}
+
+#portal {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: black;
+}
+
+#portal > div {
+  position: absolute;
+  width: 200px;
+  transition: right 0.3s;
+  padding: 12px 8px;
+  border-radius: 6px 0 0 6px;
+}
+
+.modal-visible {
+  right: 0px;
+}
+
+.modal-invisible {
+  right: -200px;
+}
