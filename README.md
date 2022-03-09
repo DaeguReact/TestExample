@@ -8,7 +8,7 @@
 | 2    | 2022.01.19 | React 라이프사이클에 대한 간단한 앱 | 하욱현 | [링크](./life-cycle-example) |        |
 | 3    | 2022.01.19 | React props를 이용한 앱             | 수진   | [링크](./props-example)      |        |
 | 4    | 2022.01.19 | React props를 이용한 앱2            | 하욱현 | [링크](./props-example2)     |        |
-| 5    | 2022.01.19 | React Hook을 이용한 앱              | 하욱현 | [링크](./hook-example2)      | 미완성 |
+| 8    | 2022.01.19 | React Hook을 이용한 앱              | 하욱현 | [링크](./hook-example2)      | 미완성 |
 
 ### 추가학습
 
