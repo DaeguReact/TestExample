@@ -4,9 +4,9 @@
 
 ### XSS
 
-![Untitled](./Untitled.png)
+![Untitled](./popup/Untitled.png)
 
-![Untitled](./Untitled%201.png)
+![Untitled](./popup/Untitled%201.png)
 
 - cross-site scripting 사이트 간 스크립팅
 - 웹사이트 관리자가 아닌 이가 웹 페이지에 악성 스크립트를 삽입할 수 있는 취약점
@@ -45,9 +45,9 @@
 
 ### CSRF
 
-![Untitled](./Untitled%202.png)
+![Untitled](./popup/Untitled%202.png)
 
-![Untitled](./Untitled%203.png)
+![Untitled](./popup/Untitled%203.png)
 
 - cross-site request forgery 사이트 간 요청 위조
 - 사용자가 자신의 의지와는 무관하게 공격자가 의도한 행위(수정, 삭제, 등록 등)를 특정 웹사이트에 요청하게 하는 공격을 말한다.
