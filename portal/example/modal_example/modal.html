@@ -45,37 +45,38 @@
   </body>
   <script>
     // Elements
-    const errorBtn = document.getElementById('error-btn')
-    const successBtn = document.getElementById('success-btn')
-    const modalWrap = document.getElementById('modal')
-    const modalBackground = document.getElementById('modal-background')
-    const modalMainHeader = document.querySelector('#modal-main > header')
+    const errorBtn = document.getElementById("error-btn");
+    const successBtn = document.getElementById("success-btn");
+    const modalWrap = document.getElementById("modal");
+    const modalBackground = document.getElementById("modal-background");
+    const modalMainHeader = document.querySelector("#modal-main > header");
 
-    errorBtn.addEventListener('click', (e) => {
-      modalOpen()
-      modalMainHeader.classList.add('error')
-    })
+    errorBtn.addEventListener("click", (e) => {
+      modalOpen();
+      modalMainHeader.classList.add("error");
+    });
 
-    successBtn.addEventListener('click', (e) => {
-      modalOpen()
-      modalMainHeader.classList.add('success')
-    })
+    successBtn.addEventListener("click", (e) => {
+      modalOpen();
+      modalMainHeader.classList.add("success");
+    });
 
-    modalBackground.addEventListener('click', (e) => {
-      modalClose()
-    })
+    modalBackground.addEventListener("click", (e) => {
+      modalClose();
+    });
 
     const modalOpen = () => {
-      modalWrap.classList.remove('close')
-      modalWrap.classList.add('open')
-    }
+      modalWrap.classList.remove("close");
+      modalWrap.classList.add("open");
+    };
+
     const modalClose = () => {
-      modalWrap.classList.add('close')
-      modalWrap.classList.remove('open')
+      modalWrap.classList.add("close");
+      modalWrap.classList.remove("open");
 
       //remove modal main header classes
-      modalMainHeader.classList.remove('error')
-      modalMainHeader.classList.remove('success')
-    }
+      modalMainHeader.classList.remove("error");
+      modalMainHeader.classList.remove("success");
+    };
   </script>
 </html>

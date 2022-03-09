@@ -1,5 +1,5 @@
-import React from 'react'
-import Portal from './Portal'
+import React from "react";
+import Portal from "./Portal";
 // import st from './Modal.module.css'
 
 const Modal = (props) => {
@@ -8,7 +8,7 @@ const Modal = (props) => {
       <div id="modal-wrap">
         <div id="modal-background" onClick={props.onClose}></div>
         <div id="modal-main">
-          <header className={props.error ? 'error' : 'success'}>
+          <header className={props.error ? "error" : "success"}>
             <h1>Title</h1>
           </header>
           <section>
@@ -22,6 +22,6 @@ const Modal = (props) => {
         </div>
       </div>
     </Portal>
-  )
-}
-export default Modal
+  );
+};
+export default Modal;
