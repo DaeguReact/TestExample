@@ -1,11 +1,10 @@
 import React from 'react'
 import Header from '../Components/Header'
-// import st from './SignIn.module.css'
+import st from './SignIn.module.css'
 
 const SignIn = (props) => {
   return (
-    <div>
-      <Header />
+    <div className="main">
       <h3>SignIn Page</h3>
     </div>
   )

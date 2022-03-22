@@ -19,3 +19,4 @@ React Context API는 다음의 메소드를 이용해 사용할 수 있습니다
 - Context.Consumer: props drilling 없이도 Context에 저장된 State를 사용할 수 있도록 합니다.
 
 ## 실습
+

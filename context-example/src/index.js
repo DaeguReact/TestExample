@@ -6,14 +6,18 @@ import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Login from './routes/Login'
 import SignIn from './routes/SignIn'
+import User from './Components/User'
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<App />}>
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/login" element={<Login />}>
+            <Route path=":id" element={<User />} />
+          </Route>
+        </Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
