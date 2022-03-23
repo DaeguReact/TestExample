@@ -100,3 +100,44 @@ Context도 매우 훌륭한 API입니다. 하지만, Context의 간단한 앱의
 또한 Context를 사용하게 된다면, Provider의 위치 그리고 각 Provider에 제공되는 값들을 Hook으로 설정해야 하는 번거로움이 존재합니다.
 
 이러한 불편을 해결하기 위해 개발자들은 Redux를 개발했고 이를 현재 사용중에 있습니다.
+
+### Redux 설치
+
+```bash
+# NPM
+npm install redux
+
+# Yarn
+yarn add redux
+```
+
+```javascript
+import { createStore } from 'redux'
+
+function counter(state = 0, action) {
+  switch (action.type) {
+    case 'INCREMENT':
+      return state + payload?? 1
+    case 'DECREMENT':
+      return state - 1
+    default:
+      return state
+  }
+}
+
+let store = createStore(counter)
+
+store.subscribe(() => console.log(store.getState())))
+
+store.dispatch({ type: 'INCREMENT', payload: 2 })
+store.dispatch({ type: 'INCREMENT' })
+store.dispatch({ type: 'DECREMENT' })
+```
+
+Javascript 파일을 하나 만들고 위의 코드를 작성해봅시다.
+
+작성 한 후
+
+```bash
+node redux.js # 만든 파일 이름
+```

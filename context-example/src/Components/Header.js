@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ThemeContext from "../context/ThemeContext";
 import st from "./Header.module.css";
@@ -6,7 +6,6 @@ import dark_st from "./Header-Dark.module.css";
 
 const Header = React.memo((props) => {
   const themeContext = useContext(ThemeContext);
-
   return (
     <header className={themeContext.isDark ? dark_st.header : st.header}>
       <h3>
