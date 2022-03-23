@@ -5,13 +5,12 @@
 React에서 가장 기본이되는 Hook입니다. Hook은 다음과 같이 사용할 수 있습니다.
 
 ```js
-import React, {useState} from 'react';
+import React, { useState } from "react";
 
 const Counter = () => {
-    const [num, setNum] = useState(0);
-}
+  const [num, setNum] = useState(0);
+};
 ```
-
 
 **useState** 함수는 기본값이 되는 값을 파라미터로 받습니다. 이후 useState 함수는 리턴값으로 리스트를 반환해주고, 리스트의 첫번째 값은 읽기 전용 변수, 쓰기 전용 함수 변수가 주어집니다. **useState**는 하나의 상태 값만 관리할 수 있습니다. 만약 여러개의 상태(State)를 관리해야 한다면, **useState**를 여러번 사용해 상태를 관리할 수 있습니다.
 
@@ -46,11 +45,11 @@ useCallback은 useMemo와 상당히 비스산 함수입니다. 렌더링 성능�
 const inputEl = useRef(null);
 
 const handleFunction = () => {
-    // current가 실제 HTML Element를 가리킴
-    inputEl.current.focus();
-}
+  // current가 실제 HTML Element를 가리킴
+  inputEl.current.focus();
+};
 
-<input type="text" ref={inputEl} />
+<input type="text" ref={inputEl} />;
 ```
 
 ## CustomHook

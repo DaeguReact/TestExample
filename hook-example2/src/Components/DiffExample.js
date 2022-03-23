@@ -1,19 +1,19 @@
-import React, { useCallback, useEffect, useMemo } from 'react'
+import React, { useCallback, useEffect, useMemo } from "react";
 
 const DiffExample = (props) => {
   const memo = useMemo(() => {
-    return 'insert JSX here'
-  }, [])
+    return "insert JSX here";
+  }, []);
 
   const callback = useCallback(() => {
-    return 'inset JSX here'
-  })
+    return "inset JSX here";
+  }, []);
 
   useEffect(() => {
-    console.log(memo)
-    console.log(callback)
-  }, [])
+    console.log(memo);
+    console.log(callback);
+  }, []);
 
-  return <div>Hello</div>
-}
-export default DiffExample
+  return <div>Hello</div>;
+};
+export default DiffExample;
