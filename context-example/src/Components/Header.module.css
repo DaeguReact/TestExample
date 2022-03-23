@@ -1,0 +1,31 @@
+.header {
+  background-color: #ccc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  justify-content: space-between;
+}
+
+.header h3 a {
+  margin-right: 3rem;
+  color: black;
+  text-decoration: none;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.right-side a {
+  margin: 0 24px;
+}
+
+.change-theme-button {
+  cursor: pointer;
+  background-color: black;
+  padding: 8px;
+  border-radius: 50%;
+}
