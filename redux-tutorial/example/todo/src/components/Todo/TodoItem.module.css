@@ -1,0 +1,15 @@
+.functions {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0;
+  font-size: 18px;
+  text-decoration: underline;
+}

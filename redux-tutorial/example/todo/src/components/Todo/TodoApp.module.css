@@ -1,0 +1,6 @@
+.todo-list-wrap {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-direction: column;
+}
