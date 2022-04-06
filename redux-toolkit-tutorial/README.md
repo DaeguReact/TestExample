@@ -51,7 +51,7 @@ ReactDOM.render(
 
 Store가 생성됐다면 이제는 Reducer함수를 만들 차례입니다. toolkit에서는 이를 좀 더 체계화하고 쉽게 만들 수 있도록 기능을 제공합니다. 그것이 바로 createSlice입니다.
 
-아래의 코드는 toolkit을 이용해 만든 reducer입니다. 구분을 위해서 toolkit을 이용한 reduce의 경우 slice라고 명명하겠습니다. 이 slice의 경우 값을 주어야 하는데,
+아래의 코드는 toolkit을 이용해 만든 reducer입니다. 구분을 위해서 toolkit을 이용한 reduce의 경우 slice라고 차별점을 두고 있습니다.. 이 slice의 경우 값을 주어야 하는데,
 
 ```js
 import { createSlice } from '@reduxjs/toolkit'
@@ -76,8 +76,19 @@ export const counterSlice = createSlice({
   },
 })
 
-// Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
-
 export default counterSlice.reducer
+```
+
+위의 예제와 같이 name, 초깃값, 그리고 reducer를 제공해주어야 합니다. 그리고 일반적으로 만든 slice의 reducer만을 반환하고 아래의 예제와 같이 Store에 Reducer를 등록해 다른 파일에서도 사용할 수 있도록 구성합니다.
+
+```jsx
+import { configureStore } from '@reduxjs/toolkit'
+import CounterSlice from '../slices/CounterSlice'
+
+export default configureStore({
+  reducer: {
+    // 여기서의 key 값이 이후 state에 접근할 때 key로서 작동합니다.
+    counter: CounterSlice,
+  },
+})
 ```
