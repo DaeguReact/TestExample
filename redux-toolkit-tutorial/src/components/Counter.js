@@ -1,19 +1,19 @@
-import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { decrement, increment } from '../slices/CounterSlice'
-import store from '../store/store'
-import classes from './Counter.module.css'
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { decrement, increment } from "../slices/CounterSlice";
+import store from "../store/store";
+import classes from "./Counter.module.css";
 
 const Counter = (props) => {
-  const counter = useSelector((state) => state.counter)
-  const dispatch = useDispatch()
+  const counter = useSelector((state) => state.counter);
+  const dispatch = useDispatch();
 
   const handleIncre = ({ payload = null }) => {
-    dispatch(increment(payload))
-  }
+    dispatch(increment(payload));
+  };
   const handldeDecre = () => {
-    dispatch(decrement())
-  }
+    dispatch(decrement());
+  };
 
   return (
     <>
@@ -26,6 +26,6 @@ const Counter = (props) => {
         </button>
       </div>
     </>
-  )
-}
-export default Counter
+  );
+};
+export default Counter;
